@@ -2,7 +2,7 @@ PI = Math.PI;
 
 let illo = new Zdog.Illustration({
     element: '.zdog-canvas',
-    zoom: 6,
+    zoom: 4,
     dragRotate: true,
 });
 

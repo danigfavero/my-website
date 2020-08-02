@@ -1,0 +1,36 @@
+body {
+  background-color: rgb(18, 122, 136);
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Prata', serif;
+  font-size: 100px;
+  font-weight: lighter;
+}
+
+p {
+  text-align: center;
+  font-family: 'Prata', serif;
+  font-size: 15px;
+}
+
+.zdog-canvas {
+  cursor: move;
+  display: block;
+  margin: auto;
+}
+
+.links {
+  display: block;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.icon {
+  width: 50px; 
+  height: auto;
+  border-left: 2rem;
+  border-right: 2rem;
+}
