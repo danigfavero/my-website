@@ -2,6 +2,7 @@ body {
   background-color: rgb(18, 122, 136);
 }
 
+
 h1 {
   margin-block-start: 3rem;
   margin-block-end: 3rem;
@@ -12,6 +13,7 @@ h1 {
 }
 
 p {
+  position: relative;
   margin-block-start: 1rem;
   margin-block-end: 1rem;
   text-align: center;
@@ -20,12 +22,14 @@ p {
 }
 
 .zdog-canvas {
+  position: relative;
   cursor: move;
   display: block;
   margin: auto;
 }
 
 .links {
+  position: relative;
   display: block;
   margin: auto;
   margin-block-start: 1rem;
@@ -39,4 +43,13 @@ p {
   height: auto;
   border-left: 3rem;
   border-right: 3rem;
+}
+
+.triangle {
+  position: absolute;
+  width: auto; 
+  height: 0; 
+  border-left: 100rem solid transparent;
+  border-right: 40rem solid transparent;
+  border-bottom: 50rem solid rgb(6, 69, 80);
 }
