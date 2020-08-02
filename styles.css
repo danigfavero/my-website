@@ -3,13 +3,17 @@ body {
 }
 
 h1 {
+  margin-block-start: 3rem;
+  margin-block-end: 3rem;
   text-align: center;
   font-family: 'Prata', serif;
-  font-size: 100px;
+  font-size: 90px;
   font-weight: lighter;
 }
 
 p {
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
   text-align: center;
   font-family: 'Prata', serif;
   font-size: 15px;
@@ -24,13 +28,15 @@ p {
 .links {
   display: block;
   margin: auto;
+  margin-block-start: 1rem;
+  margin-block-end: 2rem;
   width: 50%;
   text-align: center;
 }
 
 .icon {
-  width: 50px; 
+  width: 40px; 
   height: auto;
-  border-left: 2rem;
-  border-right: 2rem;
+  border-left: 3rem;
+  border-right: 3rem;
 }

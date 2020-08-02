@@ -2,7 +2,7 @@ PI = Math.PI;
 
 let illo = new Zdog.Illustration({
     element: '.zdog-canvas',
-    zoom: 4,
+    zoom: 3,
     dragRotate: true,
 });
 
@@ -25,6 +25,7 @@ new Zdog.Cone({
     backface: '#000000',
 });
 
+// left eye
 let eye = new Zdog.Ellipse({
     addTo: illo,
     diameter: 5,
@@ -35,11 +36,13 @@ let eye = new Zdog.Ellipse({
     rotate: { x : PI/6, y : -PI/7, z : PI/2},
 });
 
+// right eye
 eye.copy({
     rotate: { x : PI/6, y : PI/7, z : PI/2},
     translate : { x : -15, y : - 10 },
 })
 
+// monocle
 var monocle = new Zdog.Group({
     addTo: illo,
     translate: { x : 15, y : - 10, z : 5},
@@ -67,6 +70,7 @@ new Zdog.Shape({
     color: '#404040',
 })
 
+// hat
 var topHat = new Zdog.Group({
     addTo: illo,
     rotate: { x : PI/2 },
@@ -92,7 +96,7 @@ new Zdog.Cylinder({
     backface: '#020202',
 })
 
-// hat decor
+// hat stripe
 new Zdog.Cylinder({
     addTo: topHat,
     diameter: 40,
