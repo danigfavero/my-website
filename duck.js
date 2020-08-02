@@ -67,8 +67,44 @@ new Zdog.Shape({
     color: '#404040',
 })
 
+var topHat = new Zdog.Group({
+    addTo: illo,
+    rotate: { x : PI/2 },
+    translate: { y : -50, z : -20 },
+})
+
+// hat flap
+new Zdog.Cylinder({
+    addTo: topHat,
+    diameter: 60,
+    translate: { z : -17.5 },
+    color: '#1f1f1f',
+    backface: '#020202',
+})
+
+// hat body
+new Zdog.Cylinder({
+    addTo: topHat,
+    diameter: 40,
+    length: 35,
+    stroke: false,
+    color: '#1F1F1F',
+    backface: '#020202',
+})
+
+// hat decor
+new Zdog.Cylinder({
+    addTo: topHat,
+    diameter: 40,
+    length: 7,
+    translate: { z : -13 },
+    stroke: false,
+    color: '#B82C2C',
+    backface: '#1F1F1F'
+})
+
 function animate() {
-    //illo.rotate.y += 0.03;
+    illo.rotate.y += 0.03;
     illo.updateRenderGraph();
     requestAnimationFrame(animate);
 }
