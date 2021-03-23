@@ -1,0 +1,19 @@
+body {
+  background-color: #6c969c;
+}
+  
+h1 {
+  margin-block-start: 3rem;
+  margin-block-end: 3rem;
+  text-align: center;
+  font-family: 'Prata', serif;
+  font-size: 90px;
+  font-weight: lighter;
+ }
+
+.zdog-canvas {
+  position: relative;
+  cursor: move;
+  display: block;
+  margin: auto;
+}

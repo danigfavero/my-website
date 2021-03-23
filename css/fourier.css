@@ -1,0 +1,20 @@
+.p5Canvas {
+    display: block;
+    margin: auto;
+}
+
+input {
+    display: block;
+    margin: auto;
+    margin-top: 3rem;
+    width: 20rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 5rem;
+}

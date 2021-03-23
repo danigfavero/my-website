@@ -1,24 +1,57 @@
 body {
-  background-color: rgb(18, 122, 136);
+  background-color: #6c969c;
+  margin: 0;
 }
-
 
 h1 {
   margin-block-start: 3rem;
   margin-block-end: 3rem;
+  margin-top: 1rem;
   text-align: center;
-  font-family: 'Prata', serif;
+  font-family: 'Exo 2', sans-serif;
   font-size: 90px;
-  font-weight: lighter;
 }
 
 p {
   position: relative;
-  margin-block-start: 1rem;
   margin-block-end: 1rem;
   text-align: center;
-  font-family: 'Prata', serif;
+  font-family: 'Exo 2', sans-serif;
   font-size: 15px;
+  margin: 0;
+}
+
+a {
+  text-decoration:none;
+}
+
+ul {
+  list-style-type: none;  
+  overflow: hidden;
+  background-color: 	#772e25;
+  margin: auto;
+  text-align: right;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  padding: 14px 16px;
+}
+
+li a:hover:not(.active) {
+  background-color: #6c969c;
+}
+
+.header-text {
+  font-family: 'Exo 2', sans-serif;
+  display: inline-block;
+  margin-top: 1.5rem;
+  float: left;
+  font-size: 20px;
 }
 
 .zdog-canvas {
@@ -28,23 +61,50 @@ p {
   margin: auto;
 }
 
-.links {
+.stuff {
   position: relative;
   display: block;
   margin: auto;
-  margin-block-start: 1rem;
   margin-block-end: 2rem;
   width: 50%;
   text-align: center;
+  margin-top: 2rem;
+}
+
+.social {
+  margin-right: 2rem;
 }
 
 .icon {
   width: 40px; 
   height: auto;
-  border-left: 3rem;
-  border-right: 3rem;
 }
 
+.card {
+  background-color: #772e25;
+  height: 8rem;
+  width: 8rem;
+  margin: .2rem;
+  display: inline-block;
+  border-radius: .4rem;
+  font-family: 'Exo 2', sans-serif;
+  color: #101414;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.card:hover {
+  background-color: #101414;
+  color: #6c969c;
+}
+
+.card-text {
+  margin-top: 3rem; 
+  display: block;
+
+}
+
+/* 
 .triangle {
   position: absolute;
   width: auto; 
@@ -52,4 +112,4 @@ p {
   border-left: 100rem solid transparent;
   border-right: 40rem solid transparent;
   border-bottom: 50rem solid rgb(6, 69, 80);
-}
+} */
