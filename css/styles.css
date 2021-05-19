@@ -1,5 +1,5 @@
 body {
-  background-color: #6c969c;
+  background-color: #e4e4e4;
   margin: 0;
 }
 
@@ -8,50 +8,53 @@ h1 {
   margin-block-end: 3rem;
   margin-top: 1rem;
   text-align: center;
-  font-family: 'Exo 2', sans-serif;
-  font-size: 90px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 80px;
 }
 
 p {
   position: relative;
   margin-block-end: 1rem;
   text-align: center;
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   margin: 0;
+  margin-bottom: 1rem;
 }
 
 a {
   text-decoration:none;
+  color: #FF8370;
+  font-weight: bolder;
 }
 
 ul {
-  list-style-type: none;  
+  padding-inline-start: 0;
+}
+
+header {
   overflow: hidden;
-  background-color: 	#772e25;
-  margin: auto;
-  text-align: right;
+  background-color: #262626;
+  padding: 1rem 0;
+  text-align: center;
 }
 
-li {
-  float: right;
-}
-
-li a {
-  display: block;
-  padding: 14px 16px;
-}
-
-li a:hover:not(.active) {
-  background-color: #6c969c;
+footer {
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .header-text {
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   display: inline-block;
-  margin-top: 1.5rem;
-  float: left;
-  font-size: 20px;
+  font-size: 50px;
+  font-weight: bolder;
+  padding: 0 2.5rem;
+}
+
+.container {
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .zdog-canvas {
@@ -65,29 +68,21 @@ li a:hover:not(.active) {
   position: relative;
   display: block;
   margin: auto;
-  margin-block-end: 2rem;
+  margin-block-start: 4rem;
+  margin-block-end: 4rem;
   width: 50%;
   text-align: center;
   margin-top: 2rem;
 }
 
-.social {
-  margin-right: 2rem;
-}
-
-.icon {
-  width: 40px; 
-  height: auto;
-}
-
 .card {
-  background-color: #772e25;
-  height: 8rem;
-  width: 8rem;
-  margin: .2rem;
-  display: inline-block;
+  width: 9rem;
+  margin: auto;
+  margin-bottom: .2rem;
+  position: relative;
+  display: block;
   border-radius: .4rem;
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #101414;
   font-weight: bolder;
   font-size: 20px;
@@ -104,12 +99,56 @@ li a:hover:not(.active) {
 
 }
 
-/* 
-.triangle {
-  position: absolute;
-  width: auto; 
-  height: 0; 
-  border-left: 100rem solid transparent;
-  border-right: 40rem solid transparent;
-  border-bottom: 50rem solid rgb(6, 69, 80);
-} */
+.icon {
+  width: 100px; 
+  height: auto;
+  margin: 1rem;
+}
+
+.social {
+  display: inline-block;
+  border-radius: 30px;
+}
+
+.social:hover:not(.active) {
+  background-color: #FF8370;
+}
+
+.copyright {
+  font-style: italic;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .container {
+      margin-left: 6rem;
+      margin-right: 6rem;
+  }
+  .header-text {
+      font-size: 20px;
+  }
+  .icon {
+      width: 40px; 
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+      margin-left: 19rem;
+      margin-right: 19rem;
+  }
+}
+
+@media (min-width: 1900px) {
+  .container {
+      margin-left: 32rem;
+      margin-right: 32rem;
+  }
+}
+
+@media (min-width: 2400px) {
+  .container {
+      margin-left: 48rem;
+      margin-right: 48rem;
+  }
+}
