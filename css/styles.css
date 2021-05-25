@@ -83,13 +83,12 @@ footer {
   display: block;
   border-radius: .4rem;
   font-family: 'Open Sans', sans-serif;
-  color: #101414;
   font-weight: bolder;
   font-size: 20px;
 }
 
 .card:hover {
-  background-color: #101414;
+  background-color: #262626;
   color: #6c969c;
 }
 
@@ -102,12 +101,13 @@ footer {
 .icon {
   width: 100px; 
   height: auto;
-  margin: 1rem;
+  margin: .5rem;
+  opacity: 70%;
 }
 
 .social {
   display: inline-block;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 .social:hover:not(.active) {
@@ -117,6 +117,7 @@ footer {
 .copyright {
   font-style: italic;
   text-align: center;
+  font-size: 12px;
 }
 
 @media (min-width: 1024px) {
