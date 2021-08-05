@@ -30,12 +30,13 @@ a {
 
 ul {
   padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 header {
   overflow: hidden;
   background-color: #262626;
-  padding: 1rem 0;
   text-align: center;
 }
 
@@ -49,7 +50,19 @@ footer {
   display: inline-block;
   font-size: 50px;
   font-weight: bolder;
-  padding: 0 2.5rem;
+  padding: 2rem 0;
+}
+
+.header-text:hover {
+  background-color: #FF8370;
+}
+
+.header-link {
+  padding: 2rem 2.5rem;
+}
+
+.header-link:hover {
+  color: #262626;
 }
 
 .container {
