@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Visualizador de Fractais</title>
+    <style>
+        canvas {
+            border: 2px solid black;
+        }
+    </style>
+    <script src="js/fractais.js" defer></script>
+  </head>
+
+  <body>
+
+    <h1>Visualizador de Fractais</h1>
+
+    <p>Implementação de um programa para visualização de fractais definidos pelos conjuntos Mandelbrot e Julia-Fatou.</p>
+    
+    <canvas id="fractais_canvas" width="400" height="800"></canvas>
+    
+    <p>O programa permite as seguintes operações:</p>
+    <ul>
+      <li>
+        <b>Reset pela tecla R:</b> o canvas deve voltar a condição inicial dos conjuntos Mandelbrot e Julia-Fatou.
+      </li>
+      <li>
+        <b>Seleção:</b> ao segurar a tecla SHIFT, usuáries podem selecionar um retângulo sobre a janela exibindo o conjunto Mandelbrot. Para isso, usuáries devem clicar em um ponto inicial, arrastar o mouse e soltar o botão sobre um segundo ponto. Tudo isso segurando a SHIFT. O retângulo define uma nova área do plano complexo a ser exibida, e seu programa deve atualizar a janela Mandelbrot para exibir o conteúdo do plano complexo do retângulo selecionado.
+      </li>
+      <li>
+        <b>Novo c:</b> sem apertar a SHIFT, um clique do mouse sobre um ponto no conjunto Mandelbrot seleciona um novo ponto complexo c. O seu programa deve atualizar o conjunto Julia-Fatou com esse novo valor. Nada deve ocorrer se o botão for pressionado sobre a janela de Julia-Fatou.
+      </li>
+    </ul>
+
+  </body>
+</html>
