@@ -6,21 +6,15 @@ var scl = 20;
 var width = 1800;
 var height = 1200;
 
+var colr = [22, 216, 145, 100];
+var sliderR, sliderG, sliderB;
+
 var flying = 0;
 
 var grid = [];
 
-let img;
-
-// title vars
-
-var title = 'BEM-VINDX';
-
-
 function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
-
-  textAlign(CENTER, CENTER);
 
   cols = width / scl;
   rows = height / scl;
@@ -32,17 +26,22 @@ function setup() {
     }
   }
 
-  loadImage('greek.png', img => {
-    image(img, 0, 0);
-  });
-
-  //image(img, 10, 10);
+  // color sliders
+  sliderR = select('#r-slider');
+  sliderG = select('#g-slider');
+  sliderB = select('#b-slider');
 }
 
 function draw() {
+  // color control
+  colr[0] = sliderR.elt.value;
+  colr[1] = sliderG.elt.value;
+  colr[2] = sliderB.elt.value;
+
   // Perlin Noise properties
-  flying -= 0.09;
+  flying -= 0.05;
   var yoff = flying;
+  
   for (var y = 0; y < rows; y++) {
     var xoff = 0;
     for (var x = 0; x < cols; x++) {
@@ -56,7 +55,7 @@ function draw() {
   background(0);
   translate(0, 50);
   rotateX(PI/3);
-  fill(22, 216, 145, 100);
+  fill(colr[0], colr[1], colr[2], colr[3]);
   translate(-width/2, -height/2);
 
   // creates grid (triangle strip)
@@ -68,6 +67,4 @@ function draw() {
     }
     endShape();
   }
-  text('p5.js', CENTER, CENTER);
-  fill(0, 102, 153, 51);
 }
