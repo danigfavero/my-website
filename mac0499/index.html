@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
         <title>MAC0499</title>
 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">        
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="stylesheet" href="../css/tcc.css">
         <link rel="icon" type="image/png" href="../img/favicon.png"/>
@@ -13,57 +14,70 @@
 
     <body>
         <header>
-        <ul>
+        <ul class="header-menu">
             <li class="header-text"><a class="header-link" href="../">Home</a></li>
-            <li class="header-text"><a class="header-link" href="">TCC</a></li>
+            <li class="header-text header-text--clicked"><a class="header-link" href="">TCC</a></li>
         </ul>
         </header>
 
-        <h1>Trabalho de Formatura Supervisionado</h1>
-
         <div class="container">
-            <p class="names"><b>Aluna:</b> Daniela Gonzalez Favero </br>
-            <b>Supervisores:</b> Roberto Marcondes Cesar Junior </br>
-            Hugo Neves de Oliveira</p>
-            <p>O tema a ser trabalhado, <b>“Segmentação de tumores em imagens de ressonância magnética 3D”</b>, envolve visão computacional aplicada ao domínio de imagens médicas. A partir de imagens de ressonância magnética do cérebro adquiridas clinicamente, é possível treinar os dados e produzir classes de segmentação para a detecção de tumores.</p>
-            <p>Como resultado do trabalho, é esperado obter um algoritmo de segmentação e detecção de gliomas (tumores nas células gliais, no cérebro) com acurácia satisfatória. Os dados e a proposta da tarefa fazem parte de um desafio do <a href="https://www.med.upenn.edu/cbica/brats2019/tasks.html" target="_blank">BraTS</a> (Brain Tumor Segmentation), criado na conferência MICCAI (Medical Image Computing and Computer Assisted Intervention) de 2019.</p>
-            <p>Também é esperado que a modelagem do algoritmo seja adaptável para a detecção de tumores cerebrais em ressonâncias magnéticas pediátricas, e em outras regiões do cérebro. Essa segunda parte está inserida no projeto de pesquisa <b>STAP</b>, aprovado pela FAPESP, que está em andamento e pretende detectar tumores na fossa posterior, em pacientes pediátricos. Os dados do projeto são locais e vêm de uma parceria com radiologistas do ICr do HC da FMUSP.</p>
+            <h1>"Segmentação de tumores em imagens de ressonância magnética 3D"</h1>
+
+            <div class="names">
+                <div class="title-and-name">
+                    <p class="name-title">Aluna</p>
+                    <p class="name">Daniela Gonzalez Favero</p>
+                </div>
+                <div class="title-and-name">
+                    <p class="name-title">Supervisores</p>
+                    <p class="name">Roberto Marcondes Cesar Junior</p>
+                    <p class="name">Hugo Neves de Oliveira</p>
+                </div>
+            </div>
+
+            <h2>Resumo</h2>
+            <p class="abstract">Os avanços em imagens médicas requerem o desenvolvimento de métodos que melhorem a acurácia nos resultados da análise de imagem. Ferramentas automatizadas para detecção de anomalias e anotação das amostras obtidas têm se tornado altamente demandadas. Este trabalho tem como objetivo aplicar visão computacional ao domínio de imagens médicas. A partir de imagens de ressonância magnética do cérebro adquiridas clinicamente, é possível treinar os algoritmos com dados e produzir classes de segmentação para a detecção de tumores. Assim, é possível compreender melhor a mudança e evolução de estruturas cerebrais e possíveis patologias, de modo a gerar diagnósticos e análises tumorais. O desafio se encontra no formato dos dados, que por muitas vezes são ruidosos, ambíguos, escassos e temporalmente esparsos. Além disso, se pretende obter um detector aplicável a mais de uma região do cérebro. Finalmente, o projeto deve de cobrir o estudo de ressonâncias magnéticas pediátricas.</p>
+            
             <div class="stuff">
-                <h2>mais detalhes:</h2>
+                <h2>Mais detalhes</h2>
                 <ul>
                     <li class="card">
-                        <a href="proposta.html">PROPOSTA</a>
+                        <a href="projeto.pdf" target="_blank">Proposta</a>
                     </li>
                     <li class="card">
-                        <a href="">CÓDIGO</a>
+                        <a href="monografia.pdf" target="_blank">Monografia</a>
                     </li>
                     <li class="card">
-                        <a href="">MONOGRAFIA</a>
+                        <a href="">Slides</a>
                     </li>
+                    <!--
+                    <li class="card">
+                        <a href="">CÓDIGO FONTE</a>
+                    </li>
+                    -->
                 </ul>
             </div>
         </div>
-        
 
         <footer>
             <ul>
                 <li class="social">
                     <a href="http://github.com/danigfavero" target="_blank">
-                        <img class="icon" src="../img/github.png"/>
+                        <img class="icon" src="../img/github.png" onmouseover="this.src='../img/github-orange.png';" onmouseout="this.src='../img/github.png';"/>
                     </a>
                 </li>
                 <li class="social">
                     <a href="http://linkedin.com/in/danigfavero" target="_blank">
-                        <img class="icon" src="../img/linkedin.png"/>
+                        <img class="icon" src="../img/linkedin.png" onmouseover="this.src='../img/linkedin-orange.png';" onmouseout="this.src='../img/linkedin.png';"/>
                     </a>
                 </li>
                 <li class="social">
                     <a href="http://lattes.cnpq.br/4380746598220062" target="_blank">
-                        <img class="icon" src="../img/lattes.png"/>
+                        <img class="icon" src="../img/lattes.png" onmouseover="this.src='../img/lattes-orange.png';" onmouseout="this.src='../img/lattes.png';"/>
                     </a>
                 </li>
             </ul>
-            <p class="copyright">Feito com 💖 por Daniela Favero</p>
+            <p class="copyright">Feito com ♥ por Daniela Favero</p>
         </footer>
     </body>
 

@@ -4,22 +4,26 @@ body {
 }
 
 h1 {
-  margin-block-start: 3rem;
-  margin-block-end: 3rem;
-  margin-top: 1rem;
-  text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-size: 80px;
+  font-weight: 600;
+  margin: 3rem 0 4rem 0;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-block-start: 4rem;
+  margin-block-end: 0.5rem;
 }
 
 p {
   position: relative;
-  margin-block-end: 1rem;
-  text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   margin: 0;
-  margin-bottom: 1rem;
 }
 
 a {
@@ -45,12 +49,21 @@ footer {
   margin-bottom: 3rem;
 }
 
+.header-menu {
+  margin: 1.5rem;
+}
+
 .header-text {
   font-family: 'Open Sans', sans-serif;
   display: inline-block;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bolder;
   padding: 2rem 0;
+  text-transform: uppercase;
+}
+
+.header-text--clicked {
+  text-decoration: underline;
 }
 
 .header-text:hover {
@@ -58,7 +71,7 @@ footer {
 }
 
 .header-link {
-  padding: 2rem 2.5rem;
+  padding: 5rem 5.5rem;
 }
 
 .header-link:hover {
@@ -68,6 +81,11 @@ footer {
 .container {
   margin-left: 5rem;
   margin-right: 5rem;
+  margin-block-end: 6rem;
+}
+
+.center-title {
+  text-align: center;
 }
 
 .zdog-canvas {
@@ -77,42 +95,35 @@ footer {
   margin: auto;
 }
 
+.intro {
+  margin-block-end: 1rem;
+  font-size: 18px;
+}
+
 .stuff {
   position: relative;
   display: block;
-  margin: auto;
   margin-block-start: 4rem;
   margin-block-end: 4rem;
-  width: 50%;
-  text-align: center;
   margin-top: 2rem;
 }
 
 .card {
-  width: 9rem;
-  margin: auto;
   margin-bottom: .2rem;
-  position: relative;
   display: block;
   border-radius: .4rem;
   font-family: 'Open Sans', sans-serif;
-  font-weight: bolder;
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 50px;
+  text-transform: uppercase;
 }
 
 .card:hover {
-  background-color: #262626;
-  color: #6c969c;
-}
-
-.card-text {
-  margin-top: 3rem; 
-  display: block;
-
+  text-decoration: underline;
 }
 
 .icon {
-  width: 100px; 
+  width: 100px;
   height: auto;
   margin: .5rem;
   opacity: 70%;
@@ -120,17 +131,13 @@ footer {
 
 .social {
   display: inline-block;
-  border-radius: 20px;
-}
-
-.social:hover:not(.active) {
-  background-color: #FF8370;
 }
 
 .copyright {
   font-style: italic;
   text-align: center;
   font-size: 12px;
+  margin-block-start: 1rem;
 }
 
 @media (min-width: 1024px) {

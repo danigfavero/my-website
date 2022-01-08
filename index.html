@@ -4,73 +4,72 @@
         <meta charset="UTF-8">
         <title>Daniela Favero</title>
 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">        
         <link rel="stylesheet" href="css/styles.css">
         <link rel="icon" type="image/png" href="img/favicon.png"/>
     </head>
 
     <body>
         <header>
-        <ul>
-            <li class="header-text"><a class="header-link" href="">Home</a></li>
-            <li class="header-text"><a class="header-link" href="mac0499">TCC</a></li>
-        </ul>
+            <ul class="header-menu">
+                <li class="header-text header-text--clicked"><a class="header-link" href="../">Home</a></li>
+                <li class="header-text"><a class="header-link" href="">TCC</a></li>
+            </ul>
         </header>
 
-        <h1>
-            welcome!
-        </h1>
+        <div class="container">
+            <h1 class="center-title">welcome!</h1>
 
-        <div>
-            <svg class="zdog-canvas duck" width="480" height="480"></svg>
-            <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
-            <script src="js/duck.js"></script>
-        </div>
+            <div>
+                <svg class="zdog-canvas duck" width="480" height="480"></svg>
+                <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
+                <script src="js/duck.js"></script>
+            </div>
 
-        <div>
-            <p>I'm Daniela Favero, a Computer Science undergrad @ IME-USP. <br>
-                I believe that code, society and art are meant to be together.
-            </p>
-        </div>
+            <div>
+                <p class="intro">I'm Daniela Favero, a Computer Science undergrad @ IME-USP. I believe that code, society and art are meant to be together.</p>
+            </div>
 
-        <div class="stuff">
-            <h2>fun stuff made with js:</h2>
-            <ul>
-                <li class="card">
-                    <a href="fourier.html">FOURIER</a>
-                </li>
-                <li class="card">
-                    <a href="terrain.html">3D TERRAIN</a>
-                </li>
-                <li class="card">
-                    <a href="chick.html">FANCY CHICK</a>
-                </li>
-                <li class="card">
-                    <a href="fractais.html">MANDELBROT</a>
-                </li>
-            </ul>
+            <div class="stuff">
+                <h2>fun stuff made with js:</h2>
+                <ul>
+                    <li class="card">
+                        <a href="fourier.html">FOURIER</a>
+                    </li>
+                    <li class="card">
+                        <a href="terrain.html">3D TERRAIN</a>
+                    </li>
+                    <li class="card">
+                        <a href="chick.html">FANCY CHICK</a>
+                    </li>
+                    <li class="card">
+                        <a href="fractais.html">MANDELBROT</a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <footer>
             <ul>
                 <li class="social">
                     <a href="http://github.com/danigfavero" target="_blank">
-                        <img class="icon" src="img/github.png"/>
+                        <img class="icon" src="img/github.png" onmouseover="this.src='img/github-orange.png';" onmouseout="this.src='img/github.png';"/>
                     </a>
                 </li>
                 <li class="social">
                     <a href="http://linkedin.com/in/danigfavero" target="_blank">
-                        <img class="icon" src="img/linkedin.png"/>
+                        <img class="icon" src="img/linkedin.png" onmouseover="this.src='img/linkedin-orange.png';" onmouseout="this.src='img/linkedin.png';"/>
                     </a>
                 </li>
                 <li class="social">
                     <a href="http://lattes.cnpq.br/4380746598220062" target="_blank">
-                        <img class="icon" src="img/lattes.png"/>
+                        <img class="icon" src="img/lattes.png" onmouseover="this.src='img/lattes-orange.png';" onmouseout="this.src='img/lattes.png';"/>
                     </a>
                 </li>
             </ul>
-            <p class="copyright">Feito com 💖 por Daniela Favero</p>
+            <p class="copyright">Made with ♥ by Daniela Favero</p>
         </footer>
     </body>
 

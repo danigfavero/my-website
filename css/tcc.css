@@ -1,13 +1,31 @@
 p {
-    text-align: justify;
+  text-align: justify;
 }
 
 .names {
-    text-align: end;
-    font-size: 17px;
+  border-left: thick solid #FF8370;
+  padding-left: 1.5rem;
+}
+
+.title-and-name {
+  margin: 1.5rem;
+}
+
+.name-title {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.name {
+  font-size: 17px;
+}
+
+.abstract {
+  margin-block-end: 1rem;
 }
 
 .pdf {
-    display: block;
-    margin: auto;
+  display: block;
+  margin: auto;
 }
