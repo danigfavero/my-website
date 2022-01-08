@@ -140,16 +140,44 @@ footer {
   margin-block-start: 1rem;
 }
 
+@media (min-width: 768px) {
+  .header-text {
+    font-size: 32px;
+  }
+  h1 {
+    font-size: 62px;
+  }
+  .names {
+    padding-left: 0;
+  }
+  .card {
+    font-size: 30px;
+  }
+  .icon {
+    margin: 0.3rem;
+    width: 50px;
+  }
+  .copyright {
+    margin-block-start: 0;
+  }
+}
+
 @media (min-width: 1024px) {
   .container {
       margin-left: 6rem;
       margin-right: 6rem;
   }
   .header-text {
-      font-size: 20px;
+      font-size: 24px;
+  }
+  .names {
+    padding-left: 0;
+  }
+  .card {
+    font-size: 24px;
   }
   .icon {
-      width: 40px; 
+      width: 40px;
   }
 }
 
@@ -158,6 +186,9 @@ footer {
       margin-left: 19rem;
       margin-right: 19rem;
   }
+  .names {
+    padding-left: 0;
+  }
 }
 
 @media (min-width: 1900px) {
@@ -165,11 +196,17 @@ footer {
       margin-left: 32rem;
       margin-right: 32rem;
   }
+  .names {
+    padding-left: 0;
+  }
 }
 
 @media (min-width: 2400px) {
   .container {
       margin-left: 48rem;
       margin-right: 48rem;
+  }
+  .names {
+    padding-left: 0;
   }
 }
