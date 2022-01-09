@@ -1,0 +1,99 @@
+h1 {
+  font-size: 40px;
+  margin: 0 1rem .5rem 1rem;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 1.5rem 1rem .5rem 1rem;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin: .5rem 1rem .5rem 1rem;
+}
+
+p {
+  margin: 0 1rem 1rem 1rem;
+}
+
+ol {
+  font-weight: bold;
+}
+
+li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+
+footer {
+  margin-block-start: 4rem;
+}
+
+.post {
+  background-color: #fefefe;
+  border-radius: .5rem;
+  padding: 1em;
+  margin-top: 2em;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.subtitle {
+  color: #555555;
+  font-size: 20px;
+  margin: 0 1rem .5rem 1rem;
+}
+
+.author {
+  border-left: thick solid #FF8370;
+  padding-left: 1.5rem;
+  margin: 0 0 0 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.post-img {
+  margin: 2rem 1rem .1rem 1rem;
+  width: -webkit-fill-available;
+}
+
+.description {
+  color: #555555;
+  font-size: 10px;
+}
+
+.bib {
+  font-weight: normal;
+}
+
+@media (min-width: 1024px) {
+  .post {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .post {
+    margin-left: 19rem;
+    margin-right: 19rem;
+  }
+}
+
+@media (min-width: 1900px) {
+  .post {
+    margin-left: 32rem;
+    margin-right: 32rem;
+  }
+}
+
+@media (min-width: 2400px) {
+  .post {
+    margin-left: 48rem;
+    margin-right: 48rem;
+  }
+}
